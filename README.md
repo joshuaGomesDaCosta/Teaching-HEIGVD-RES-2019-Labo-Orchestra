@@ -143,17 +143,17 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | How do we **define and build our own Docker image**?|
-| | *Enter your response here...*  |
+| | docker build [flags] dockerFile  |
 |Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?  |
 | | exemple: ENTRYPOINT ["node", "/opt/app/Auditor.js"]  |
 |Question | After building our Docker image, how do we use it to **run containers**?  |
-| | *Enter your response here...*  |
+| | docker run [flags] docker-image |
 |Question | How do we get the list of all **running containers**?  |
-| | *Enter your response here...*  |
+| | docker ps |
 |Question | How do we **stop/kill** one running container?  |
-| | *Enter your response here...*  |
+| | kill <unique-name> |
 |Question | How can we check that our running containers are effectively sending UDP datagrams?  |
-| | *Enter your response here...*  |
+| | we can use wireshark to check the communications  |
 
 
 ## Task 4: implement an "auditor" Node.js application
@@ -163,13 +163,13 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | With Node.js, how can we listen for UDP datagrams in a multicast group? |
 | | *Enter your response here...*  |
 |Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**?  |
-| | *Enter your response here...* |
+| | exemple: var map= new Map();map.set(arg1,arg2); |
 |Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?  |
-| | *Enter your response here...* |
+| | exemple:  moment().format(formatString).fromNow() |
 |Question | When and how do we **get rid of inactive players**?  |
 | | *Enter your response here...* |
 |Question | How do I implement a **simple TCP server** in Node.js?  |
-| | *Enter your response here...* |
+| | exemple: var net = require('net');var server = net.createServer(...);serveur.listen(port,ip);|
 
 
 ## Task 5: package the "auditor" app in a Docker image
@@ -177,7 +177,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | How do we validate that the whole system works, once we have built our Docker image? |
-| | *Enter your response here...* |
+| | try to run it |
 
 
 ## Constraints
